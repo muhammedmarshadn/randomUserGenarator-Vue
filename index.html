@@ -1,0 +1,16 @@
+<head>
+    <link rel="stylesheet" href="style.css"></link>
+    <title>Random user generator</title>
+</head>
+<body>
+    <div class="card"  id="app">
+        <img :src="picture" :class="gender" :alt="firstname">
+        <h1>{{firstName}} {{lastName}}</h1>
+        <h3>Email:{{email}}</h3>
+        <button :class="gender" @click="getUser()">Generate random user</button>
+
+    </div>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script src="app.js"></script>
+</script>
+</body>
